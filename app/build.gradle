@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     def Properties versionProps = new Properties()
     versionProps.load(new FileInputStream(file('version.properties')))
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionName versionProps['name']
         versionCode versionProps['code'].toInteger()
 
